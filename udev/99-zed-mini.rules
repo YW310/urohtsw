@@ -1,0 +1,5 @@
+# ZED USB camera and sensor access for the existing plugdev group.
+SUBSYSTEM=="usb", ATTR{idVendor}=="2b03", GROUP="plugdev", MODE="0660"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="2b03", GROUP="plugdev", MODE="0660"
+SUBSYSTEM=="video4linux", ATTRS{idVendor}=="2b03", GROUP="plugdev", MODE="0660"
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="2b03", TEST=="power/control", ATTR{power/control}="on"

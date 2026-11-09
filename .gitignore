@@ -1,0 +1,44 @@
+# Offline payloads are distributed separately from the Git repository.
+*.tar.gz
+*.whl
+*.deb
+*.run
+
+# Local credentials and agent configuration.
+/.aws/
+/.codex/
+/.agents/
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Python environments and caches.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Generated installation state and runtime output.
+/installation.json
+/environment_report.json
+ui_runtime/
+font_cache/
+*.log
+!/inventory/*.log
+
+# Local editor, operating system, and backup files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.bak
+*.tmp

@@ -1,0 +1,26 @@
+{
+  "snapshot_date": "2026-11-06",
+  "source_os": "Ubuntu 20.04.6 LTS x86_64",
+  "source_kernel": "5.14.0-1057-oem",
+  "source_gpu": "2 x RTX A5000 24GB",
+  "source_nvidia_driver": "535.183.01",
+  "source_zed": "4.2.5 CUDA11.8",
+  "model": "T42_lora_manual_t40_g55_joint_3cam_h30_4gpu",
+  "checkpoint_step": 20000,
+  "model_id": "0f0b45e5e78e862d06ad0cb0cb529f60261f9c64b8f91ed5862cbfdf74218715",
+  "motion_test_performed": false,
+  "target_hardware_verified": false,
+  "excluded": [
+    "historical episode RGB/depth datasets",
+    "other model checkpoints",
+    "SSH keys and session tokens",
+    "kernel / NVIDIA driver",
+    "active sessions and path validation caches",
+    "external RL actor and learner runtime"
+  ],
+  "unpacked_bytes": 23448355453,
+  "updates": [
+    "20261106-folder-register-load-v1",
+    "20261109-zed-offline-settings-usb-groups"
+  ]
+}

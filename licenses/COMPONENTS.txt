@@ -1,0 +1,7 @@
+OHT offline distribution: copies of the installed environment for the owner's offline workstation.
+Python/PyPI package licenses are retained in each package's dist-info or source directories.
+ZED license and third-party notices: payload usr/local/zed/doc/license (after extraction).
+Noto CJK: see Noto-CJK-copyright.txt.
+Chrome browser files retain their product resources; prefer the installed system Chrome/Chromium when available.
+The NVIDIA kernel driver is not distributed by this package.
+Use vendor components according to their licenses. This package does not grant additional redistribution rights.

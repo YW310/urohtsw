@@ -1,0 +1,15 @@
+{
+  "id": "0f0b45e5e78e862d06ad0cb0cb529f60261f9c64b8f91ed5862cbfdf74218715",
+  "experiment": "T42_lora_manual_t40_g55_joint_3cam_h30_4gpu",
+  "completed_updates": 20000,
+  "action_mode": "joint",
+  "cameras": [
+    0,
+    1,
+    2
+  ],
+  "chunk_size": 30,
+  "weights_bytes": 6336844255,
+  "file_count": 303,
+  "other_checkpoints_included": false
+}

@@ -1,0 +1,265 @@
+{
+  "source_app": "2026-11-06 .200 snapshot",
+  "target": "Ubuntu 20.04 x86_64 baseline",
+  "source_host_modified": false,
+  "robot_motion_started": false,
+  "camera_capture_started": false,
+  "gpu_model_warmup_performed": false,
+  "single_model": "T42 / 20000",
+  "checkpoint_content_comparison": "rsync checksum dry-run against .200: no differences",
+  "isolated_environment_imports": [
+    {
+      "name": "CPU",
+      "ok": true,
+      "detail": "x86_64",
+      "required": true
+    },
+    {
+      "name": "OS baseline",
+      "ok": false,
+      "detail": [
+        "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"",
+        "NAME=\"Ubuntu\"",
+        "VERSION_ID=\"22.04\"",
+        "VERSION=\"22.04.5 LTS (Jammy Jellyfish)\""
+      ],
+      "required": false
+    },
+    {
+      "name": "Storage >= 30 GiB free",
+      "ok": true,
+      "detail": "/mnt/raid6/Yamin/Code/VLA-Precision-main/codex_work/oht_offline_20261106/work/install_test/data",
+      "required": false
+    },
+    {
+      "name": "Control",
+      "ok": true,
+      "detail": "1.26.4 1.14.1",
+      "required": true
+    },
+    {
+      "name": "Private RTDE",
+      "ok": true,
+      "detail": "/mnt/raid6/Yamin/Code/VLA-Precision-main/codex_work/oht_offline_20261106/work/install_test/home/samsung/codex_work/gello_shadow_session_20260921T061545_594387Z/oht_replay_unified_v1_20261030/teleop/sdk/rtde_control.cpython-311-x86_64-linux-gnu.so\n1.6.2-codex-guard3-joint",
+      "required": true
+    },
+    {
+      "name": "RealSense RGBD",
+      "ok": true,
+      "detail": "4.10.0 1.26.4",
+      "required": true
+    },
+    {
+      "name": "Calibration",
+      "ok": true,
+      "detail": "4.11.0",
+      "required": true
+    },
+    {
+      "name": "ZED (import only)",
+      "ok": true,
+      "detail": "[2026-11-06 09:06:22 UTC][ZED][INFO] Logging level INFO\n[2026-11-06 09:06:22 UTC][ZED][INFO] Logging level INFO\n4.2.5",
+      "required": true
+    },
+    {
+      "name": "Policy libraries (CPU only)",
+      "ok": true,
+      "detail": "jax 0.5.3",
+      "required": true
+    },
+    {
+      "name": "T42 metadata",
+      "ok": true,
+      "detail": "T42_lora_manual_t40_g55_joint_3cam_h30_4gpu 20000",
+      "required": true
+    },
+    {
+      "name": "NVIDIA driver",
+      "ok": true,
+      "detail": "NVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB\nNVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB\nNVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB\nNVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB",
+      "required": true
+    },
+    {
+      "name": "GELLO serial path",
+      "ok": false,
+      "detail": [],
+      "required": false
+    },
+    {
+      "name": "Browser",
+      "ok": true,
+      "detail": "Chrome/Chromium for operator UI",
+      "required": true
+    }
+  ],
+  "http_services": {
+    "passed": 17,
+    "checks": [
+      "manager health identity",
+      "UI health identity",
+      "UI inactive",
+      "no inherited result gate",
+      "manager empty: no weights loaded",
+      "trilingual selector served",
+      "English task served",
+      "T42 metadata kept",
+      "oht_i18n.js served correctly",
+      "oht_i18n_catalog.js served correctly",
+      "unified_ui.js served correctly",
+      "collection_keyboard.js served correctly",
+      "reference_overlay.js served correctly",
+      "model load requires matching origin/token",
+      "model adapter rejects non-load actions",
+      "camera runtime never created",
+      "zero capture subprocess"
+    ]
+  },
+  "manuals": {
+    "manual_en.html": 13,
+    "manual_ko.html": 13,
+    "manual_zh-CN.html": 13,
+    "index.html": 0
+  },
+  "known_limits": [
+    "Target hardware not tested",
+    "NVIDIA kernel driver is installed separately",
+    "External RL actor/learner not included",
+    "Old calibration/clearance settings are source-site specific"
+  ],
+  "archive_install_check": {
+    "installer_exit_code": 0,
+    "three_archives_extracted": true,
+    "relocation_launcher_fix": "Skip root launchers and offline tools; verified with a fresh fixture plus restored archive-installed launchers.",
+    "dependency_check_exit_code": 0,
+    "target_hardware_tested": false
+  },
+  "archive_installed_environment_imports": [
+    {
+      "name": "CPU",
+      "ok": true,
+      "detail": "x86_64",
+      "required": true
+    },
+    {
+      "name": "OS baseline",
+      "ok": false,
+      "detail": [
+        "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"",
+        "NAME=\"Ubuntu\"",
+        "VERSION_ID=\"22.04\"",
+        "VERSION=\"22.04.5 LTS (Jammy Jellyfish)\""
+      ],
+      "required": false
+    },
+    {
+      "name": "Storage >= 30 GiB free",
+      "ok": true,
+      "detail": "/mnt/raid6/Yamin/Code/VLA-Precision-main/codex_work/oht_offline_20261106/work/archive_install_data",
+      "required": false
+    },
+    {
+      "name": "Control",
+      "ok": true,
+      "detail": "1.26.4 1.14.1",
+      "required": true
+    },
+    {
+      "name": "Private RTDE",
+      "ok": true,
+      "detail": "/mnt/raid6/Yamin/Code/VLA-Precision-main/codex_work/oht_offline_20261106/work/archive_install_test/home/samsung/codex_work/gello_shadow_session_20260921T061545_594387Z/oht_replay_unified_v1_20261030/teleop/sdk/rtde_control.cpython-311-x86_64-linux-gnu.so\n1.6.2-codex-guard3-joint",
+      "required": true
+    },
+    {
+      "name": "RealSense RGBD",
+      "ok": true,
+      "detail": "4.10.0 1.26.4",
+      "required": true
+    },
+    {
+      "name": "Calibration",
+      "ok": true,
+      "detail": "4.11.0",
+      "required": true
+    },
+    {
+      "name": "ZED (import only)",
+      "ok": true,
+      "detail": "[2026-11-06 09:36:10 UTC][ZED][INFO] Logging level INFO\n[2026-11-06 09:36:10 UTC][ZED][INFO] Logging level INFO\n4.2.5",
+      "required": true
+    },
+    {
+      "name": "Policy libraries (CPU only)",
+      "ok": true,
+      "detail": "jax 0.5.3",
+      "required": true
+    },
+    {
+      "name": "T42 metadata",
+      "ok": true,
+      "detail": "T42_lora_manual_t40_g55_joint_3cam_h30_4gpu 20000",
+      "required": true
+    },
+    {
+      "name": "NVIDIA driver",
+      "ok": true,
+      "detail": "NVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB\nNVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB\nNVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB\nNVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB",
+      "required": true
+    },
+    {
+      "name": "GELLO serial path",
+      "ok": false,
+      "detail": [],
+      "required": false
+    },
+    {
+      "name": "Browser",
+      "ok": true,
+      "detail": "Chrome/Chromium for operator UI",
+      "required": true
+    }
+  ],
+  "checkpoint_folder_picker": {
+    "version": "20261106-folder-register-load-v1",
+    "backend_checks": 13,
+    "browser_checks": 16,
+    "model_weights_loaded_during_test": false,
+    "offline_installed_services": {
+      "passed": 20,
+      "checks": [
+        "manager health identity",
+        "UI health identity",
+        "UI inactive",
+        "no inherited result gate",
+        "manager empty: no weights loaded",
+        "trilingual selector served",
+        "English task served",
+        "T42 metadata kept",
+        "oht_i18n.js served correctly",
+        "oht_i18n_catalog.js served correctly",
+        "unified_ui.js served correctly",
+        "collection_keyboard.js served correctly",
+        "reference_overlay.js served correctly",
+        "model load requires matching origin/token",
+        "model adapter rejects non-load actions",
+        "installed T42 browse",
+        "installed T42 register",
+        "folder API does not load weights",
+        "camera runtime never created",
+        "zero capture subprocess"
+      ]
+    },
+    "archive": {
+      "updated_files_verified": [
+        "checkpoint_picker.js",
+        "checkpoint_picker.py",
+        "collection_ui.html",
+        "collection_ui_server.py",
+        "oht_i18n_catalog.js",
+        "unified_supervisor.py",
+        "unified_ui.css",
+        "unified_ui.js"
+      ],
+      "core_has_no_models_or_policy_runtime": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+PASS | CPU | x86_64
+INFO | OS baseline | ['PRETTY_NAME="Ubuntu 22.04.5 LTS"', 'NAME="Ubuntu"', 'VERSION_ID="22.04"', 'VERSION="22.04.5 LTS (Jammy Jellyfish)"']
+PASS | Storage >= 30 GiB free | /mnt/raid6/Yamin/Code/VLA-Precision-main/codex_work/oht_offline_20261106/work/archive_install_data
+PASS | Control | 1.26.4 1.14.1
+PASS | Private RTDE | /mnt/raid6/Yamin/Code/VLA-Precision-main/codex_work/oht_offline_20261106/work/archive_install_test/home/samsung/codex_work/gello_shadow_session_20260921T061545_594387Z/oht_replay_unified_v1_20261030/teleop/sdk/rtde_control.cpython-311-x86_64-linux-gnu.so
+1.6.2-codex-guard3-joint
+PASS | RealSense RGBD | 4.10.0 1.26.4
+PASS | Calibration | 4.11.0
+PASS | ZED (import only) | [2026-11-06 09:36:10 UTC][ZED][INFO] Logging level INFO
+[2026-11-06 09:36:10 UTC][ZED][INFO] Logging level INFO
+4.2.5
+PASS | Policy libraries (CPU only) | jax 0.5.3
+PASS | T42 metadata | T42_lora_manual_t40_g55_joint_3cam_h30_4gpu 20000
+PASS | NVIDIA driver | NVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB
+NVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB
+NVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB
+NVIDIA RTX PRO 5000 72GB Blackwell, 580.178.04, 73415 MiB
+INFO | GELLO serial path | []
+PASS | Browser | Chrome/Chromium for operator UI
+Report: /mnt/raid6/Yamin/Code/VLA-Precision-main/codex_work/oht_offline_20261106/work/archive_install_test/environment_report.json
+No camera capture, robot connection, or model inference was started.

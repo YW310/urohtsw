@@ -1,0 +1,14 @@
+{
+  "version": "20261106-folder-register-load-v1",
+  "files": {
+    "collection_ui.html": "fcc3a268ee2711278110a9f7b2d8c84f769ed0e23c3ef6d50df461c5fa17bbc2",
+    "collection_ui_server.py": "cd270646599a5a4694ad0e73398979b91c1c6593bc3f89c5678237d2fd39dd82",
+    "unified_ui.js": "2426520d32dd9a14b259c37213cf0203eab91a1ae10363254fc6d369a91951c3",
+    "unified_ui.css": "f6ad42c346695926280dd138a3e567e6c7d4bb64439e00beba81a71fb55b8b02",
+    "unified_supervisor.py": "e9de0e41e70c9e8b5eb3f72b327db6474058118f8597a661863bc2b9e2e94329",
+    "oht_i18n_catalog.js": "fcf55f2c9bb176646dff90707a20d8e160c4c0fe58721c55dc0565a7e9e616a8",
+    "checkpoint_picker.js": "606edd0cbc3ff475655843b27bfcc0aa3ba71b59637ea94ecb5f73af22806501",
+    "checkpoint_picker.py": "5c9a22ef77e5a86b0b814e3278b0dcedd889bfe09241d8bb108d24e84a723d1f"
+  },
+  "model_package_unchanged": true
+}

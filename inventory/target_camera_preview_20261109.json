@@ -1,0 +1,39 @@
+{
+  "schema": "oht-target-camera-preview-check-v1",
+  "date": "2026-11-09",
+  "timezone": "Asia/Shanghai",
+  "maintenance_document": "docs/CAMERA_PORTABILITY_FIX_20261109.md",
+  "installation_root": "/home/yiwei/OHT_offline",
+  "fixes": [
+    "Set ZED InitParameters.optional_settings_path to the bundled settings directory, including the required trailing slash.",
+    "Stop confirmed orphaned SDK calibration download subprocesses that inherited the ZED video device handle.",
+    "Include plugdev membership when installing ZED USB permission rules."
+  ],
+  "zed_sdk_version": "4.2.5",
+  "calibration_file": "usr/local/zed/settings/SN15891605.conf",
+  "camera_service_ready": true,
+  "camera_service_error": null,
+  "app_http_checks": {
+    "/api/status": 200,
+    "/api/frames": 200
+  },
+  "live_preview_verified": [
+    {"name": "camera_0", "serial": "260322272556", "backend": "realsense", "usb_type_descriptor": "3.2"},
+    {"name": "camera_1", "serial": "260322279549", "backend": "realsense", "usb_type_descriptor": "2.1"},
+    {"name": "camera_2", "serial": "15891605", "backend": "zed", "usb_speed_mbps": 5000}
+  ],
+  "validation": {
+    "existing_zed_integration_tests_passed": 18,
+    "fresh_install_relocation_fixture_passed": true,
+    "usb_installer_shell_syntax_passed": true,
+    "all_three_app_camera_checks_true": true,
+    "all_three_preview_endpoints_returned_live_jpeg": true
+  },
+  "robot_connection_started": false,
+  "robot_motion_started": false,
+  "episode_recording_started": false,
+  "limitations": [
+    "camera_1 still negotiates USB 2.1; USB 3 cabling remains recommended for bandwidth and stability.",
+    "This check confirms live preview, not recording durability, camera calibration accuracy, policy inference, or robot operation."
+  ]
+}
